@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="weight=device-weight, initial-scale=1.0">
+        <title>welcome to coding</title>
+        <link rel="stylesheet" href="welcome.css">
+    </head>
+    <body>
+        <h1>Welcome to coding</h1>
+        <p>welcoming to space tech</p>
+        <form>
+        <fieldset>
+        <label for="name">Name: <input id="name" name="name" type="text" required/></label>
+        <label for="dob">D.O.B: <input id="dob" name="dob" type="date" required/></label>
+        <label for="email">Email: <input id="email" type="email" required/></label>
+        <label for="password">Password: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required/></label>
+    </fieldset>
+    <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="">terms and conditions</a>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label for="profile-picture">Upload a profile picture:<input id="profile-picture" name="profile-picture" type="file" required/></label>
+        <label for="referrer">How did you hear about us?
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">freeCodeCamp News</option>
+              <option value="2">freeCodeCamp YouTube Channel</option>
+              <option value="3">freeCodeCamp Forum</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <label for="bio">Provide a bio:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+</form>
